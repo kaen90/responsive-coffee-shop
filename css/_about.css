@@ -1,0 +1,9 @@
+.b-about {
+  background-color: #fff;
+  height: 50vh;
+  padding-top: 85px;
+  padding-bottom: 60px; }
+  .b-about__box {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }

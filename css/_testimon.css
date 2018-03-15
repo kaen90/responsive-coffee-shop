@@ -1,0 +1,39 @@
+.b-testimon {
+  height: 80vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center; }
+  .b-testimon__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .b-testimon__img {
+    height: 430px;
+    width: 815px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: calc(66% - 20px);
+    flex-basis: calc(66% - 20px);
+    overflow: hidden;
+    background-color: #222;
+    z-index: 0; }
+    .b-testimon__img img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -2;
+      overflow: hidden;
+      height: 100%;
+      width: auto;
+      height: 430px;
+      width: 815px; }

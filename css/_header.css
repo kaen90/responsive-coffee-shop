@@ -1,0 +1,53 @@
+.b-header {
+  background: #2f2f2f url("../image/header-bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 80vh; }
+  .b-header__nav {
+    background-color: #44403a;
+    opacity: 0.8;
+    height: 100px;
+    margin: 0 auto; }
+  .b-header__navbox {
+    width: 550px;
+    margin: 0 auto; }
+    .b-header__navbox a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: capitalize;
+      margin-right: 15px;
+      padding-top: 50px; }
+  .b-header__cont {
+    margin: 200px 160px;
+    width: 460px; }
+  .b-header__title {
+    font: 700 32px/1.0 'Playfair Display', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    font-size: 48px;
+    color: #f5d76e;
+    text-transform: capitalize; }
+  .b-header__text {
+    font: 400 16px/1.5 "Lato", Arial, sans-serif;
+    color: #fff;
+    margin-bottom: 30px; }
+  .b-header__btn {
+    font: 700 13px/1.0 'Lato', Arial, sans-serif;
+    border: 2px solid #2f2f2f;
+    width: 185px;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border-color: #FFF;
+    color: #FFF; }
+    .b-header__btn:hover {
+      border-color: #f5d76e;
+      color: #f5d76e; }
+    .b-header__btn:active {
+      border-color: #f3d056;
+      color: #f3d056; }

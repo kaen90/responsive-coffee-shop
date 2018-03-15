@@ -1,0 +1,46 @@
+@import "_variables.scss";
+
+.b-footer{
+	height: 185px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	background-color: $bgcolor;
+	color: $whaitcolor;
+	&__box{
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__info{
+		color: $goldcolor;
+	}
+	&__design{
+		text-transform: uppercase;
+	}
+	&__socials{
+		display: flex;
+		width: 200px;
+		margin: 0 auto;
+		justify-content: space-between;
+		a{
+		text-decoration: none;
+		color: #FFF;
+		margin: 0 auto;
+
+		&:hover, &:focus{
+			fill: $goldcolor;
+			}
+		}
+	}
+}
+		svg{
+			fill: $whaitcolor;
+			margin-right: 10px;
+			&:hover, a:active{
+				fill: $goldcolor;
+				}
+			}
+
+
+

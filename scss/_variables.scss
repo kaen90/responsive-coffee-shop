@@ -1,0 +1,38 @@
+$maincolor: #2f2f2f;
+$goldcolor: #f5d76e;
+$bgcolor: #39312f;
+$whaitcolor: #fff;
+$mainfont: 400 16px/1.5 'Lato', Arial, sans-serif;
+$menufont: 400 16px/1.5 'Playfair Display', Arial, sans-serif;
+$titlefont: 700 32px/1.5 'Playfair Display', Arial, sans-serif;
+
+@mixin transition {
+	transition: all .3s ease;
+}
+
+@mixin title {
+	font: 700 32px/1.0 'Playfair Display', Arial, sans-serif;
+	text-transform: uppercase;
+	color: $maincolor;
+}
+
+@mixin btn {
+	font: 700 13px/1.0 'Lato', Arial, sans-serif;
+	border: 2px solid $maincolor;
+	width: 185px;
+	padding: 20px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $maincolor;
+	@include transition;
+	&:hover{
+		border-color: $goldcolor;
+		color: $goldcolor;
+	}
+	&:active{
+		border-color: darken($goldcolor, 5%);
+		color: darken($goldcolor, 5%);
+	}
+}

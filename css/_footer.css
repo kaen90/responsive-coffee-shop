@@ -1,0 +1,14 @@
+.b-footer {
+  height: 20vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #39312f;
+  color: #fff; }
+  .b-footer__box {
+    width: 70%;
+    margin: 0 auto; }
+  .b-footer__info {
+    color: #f5d76e; }
+  .b-footer__design {
+    text-transform: uppercase; }

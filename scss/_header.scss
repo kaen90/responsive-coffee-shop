@@ -1,0 +1,260 @@
+@import "variables.scss";
+
+.b-header{
+	background: $maincolor url("../image/header-bg.jpg") no-repeat center;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	&__nav{
+		background-color: rgba(102, 102, 102, 0.7);
+		height: 100px;
+		width: 100%;
+		}
+	&__navbox{
+		width: 550px;
+		margin: 0 auto;
+		position: relative;
+
+		a{
+			text-decoration: none;
+			color: $whaitcolor;
+			text-transform: capitalize;
+			font: $menufont;
+			color: $whaitcolor;
+			letter-spacing: 0.05em;
+
+			&:hover{
+				color: $goldcolor;
+				@include transition;
+			}
+		}
+
+	}
+
+	&__leftnav{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 130px;
+			position: absolute;
+			left: 54px;
+			top: 35px;
+	}
+	&__logo{
+		margin: 0 auto;
+		width: 150px;
+	}
+	&__rightnav{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 180px;
+		position: absolute;
+		right: 0;
+		top: 35px;
+	}
+	&__cont{
+		margin-left: 5%;
+		padding: 15px;
+		max-width: 460px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	&__title{
+		@include title;
+		font-size: 48px;
+		color: $goldcolor;
+		text-transform: capitalize;
+	}
+	&__text{
+		font: $mainfont;
+		color: $whaitcolor;
+		margin-bottom: 30px;
+
+	}
+	&__btn{
+		@include btn;
+		text-align: center;
+		border-color: #FFF;
+		color: #FFF;
+	}
+	&__navbox label.toggleMenu img{
+		display: none;
+	}
+}
+
+.b-header__navbox [type="checkbox"]{
+	display: none;
+}
+
+	@media all and (max-width: 415px){
+	.b-header{
+		position: relative;
+
+		&__cont{
+			margin-left: 0;
+			text-align: center;
+		}
+		&__btn{
+			margin: 0 auto;
+		}
+		&__text{
+			width: 95%;
+			}
+	&__leftnav{
+		display: none;
+	}
+	&__rightnav{
+		display: none;
+	}
+	&__logo{
+		margin: 0 auto;
+		width: 150px;
+		text-align: center;
+		& img{
+			width:100px;
+		}
+	}
+	&__navbox{
+		width: 330px;
+		margin: 0 auto;
+	}
+	&__navbox label.toggleMenu{
+	padding: 5px 50px;
+	text-transform: uppercase;
+	font-size: 16px;
+	cursor: pointer;
+	position: relative;
+	display: block;
+	& img{
+		position: absolute;
+		top: 20px;
+		left: 10px;
+		display: block;
+
+		}
+	}
+}
+	input.toggleMenu:checked ~ .b-header__leftnav{
+		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: stretch;
+		position: absolute;
+		left: 10px;
+		top: 60px;
+		width: 160px;
+		z-index: 1;
+		& a{
+			padding: 5px;
+			background-color: #3c3c3c;
+			border-bottom: 1px solid $whaitcolor;
+			width: 150px;
+			z-index: 2;
+		}
+
+	}
+	input.toggleMenu:checked ~ .b-header__rightnav{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: stretch;
+		width: 180px;
+		position: absolute;
+		left: 0;
+		top: 120px;
+		width: 160px;
+		margin: 10px;
+		z-index: 1;
+		& a{
+			padding: 5px;
+			background-color: #3c3c3c;
+			border-bottom: 1px solid $whaitcolor;
+			width: 150px;
+			z-index: 2;
+		}
+	}
+}
+
+@media all and (min-width: 770px) and (max-width: 1024px){
+	.b-header{
+		display: relative;
+		higth: 1370px;
+
+		&__cont{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 50%;
+			left: 15%;
+		}
+		&__title{
+			text-align: center;
+		}
+		&__text{
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		&__leftnav{
+			display: none;
+		}
+		&__rightnav{
+			display: none;
+		}
+		&__logo{
+			position: absolute;
+			top: 50%;
+			left: 35%;
+
+		}
+		&__nav{
+			margin: 0;
+		}
+		&__navbox label.toggleMenu{
+		padding: 15px 50px;
+		text-transform: uppercase;
+		font-size: 16px;
+		cursor: pointer;
+		position: relative;
+		display: block;
+		& img{
+			position: absolute;
+			top: 20px;
+			left: -200px;
+			display: block;
+
+			}
+		}
+	}
+	input.toggleMenu:checked ~ .b-header__leftnav{
+		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: stretch;
+		position: absolute;
+		left: -190px;
+		top: 70px;
+	}
+	input.toggleMenu:checked ~ .b-header__rightnav{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: stretch;
+		width: 180px;
+		position: absolute;
+		left: -200px;
+		top: 110px;
+		width: 100px;
+		margin: 10px;
+	}
+}

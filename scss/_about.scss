@@ -1,0 +1,26 @@
+@import "variables.scss";
+
+.b-about{
+	background-color: $whaitcolor;
+	&__box{
+		max-width: 65%;
+		min-width: 45%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 20px;
+	}
+	&__title{
+		@include title;
+		text-transform: none;
+	}
+	&__text{
+		font: $mainfont;
+		margin-bottom: 50px;
+	}
+}
+@media all and (max-width: 415px){
+	.b-about{
+		min-height: 415px;
+
+	}
+}
